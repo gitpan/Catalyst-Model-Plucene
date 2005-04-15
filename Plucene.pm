@@ -4,7 +4,7 @@ use strict;
 use base qw/Catalyst::Base Plucene::Simple/;
 use NEXT;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -36,6 +36,10 @@ Catalyst::Model::Plucene - Plucene Model Class
 
 This is the C<Plucene> model class.
 
+=head2 new
+
+Sets path from model config. Defaults to /tmp/index
+
 =cut
 
 sub new {
@@ -51,11 +55,12 @@ L<Catalyst>, L<Plucene::Simple>
 =head1 AUTHOR
 
 Sebastian Riedel, C<sri@cpan.org>
+Marcus Ramberg, C<mramberg@cpan.org>
 
 =head1 COPYRIGHT
 
-This program is free software, you can redistribute it and/or modify it under
-the same terms as Perl itself.
+This program is free software, you can redistribute it and/or modify it 
+under the same terms as Perl itself.
 
 =cut
 
